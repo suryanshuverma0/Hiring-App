@@ -67,8 +67,8 @@ export default function LanguageScreen({ navigation }) {
             placeholder={{ label: i18n.t('choose_language'), value: null }}
               // placeholder={{ label: 'Choose Language', value: null }}
             items={[
-              { label: "English", value: "en" },
-              { label: "Nepali", value: "np" },
+              { label: "अंग्रेजी", value: "en" },
+              { label: "नेपाली", value: "np" },
             ]}
             value={selectedLanguage}
             style={pickerSelectStyles}

@@ -4,7 +4,7 @@ import i18n from "../localization/i18n";
 
 export default function GetStartedScreen({ navigation }) {
   const handleContinue = () => {
-    navigation.navigate("UserType");
+    navigation.navigate("RoleSelection");
   };
 
   return (
