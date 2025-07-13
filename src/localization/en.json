@@ -4,5 +4,21 @@
   "continue": "Continue",
   "choose_language": "Choose a language...",
   "tagline_title": "All your services in one app",
-  "tagline_subtitle": "Simplifying your service needs, just for you"
+  "tagline_subtitle": "Simplifying your service needs, just for you",
+   "who_are_you": "Who are you?",
+  "choose_role": "Choose your role to get started",
+  "service_provider": "Service Provider",
+  "consumer": "Consumer",
+  "service_provider_desc": "Offer services to customers",
+  "consumer_desc": "Hire service providers",
+  "please_select_role": "Please select a role to continue.",
+  "error": "Error",
+  "something_went_wrong": "Something went wrong. Try again.",
+  "lets_get_started": "Let's get started!",
+  "enter_name_phone_subtitle": "Enter your name and phone number to continue",
+  "name_placeholder": "Full Name",
+  "phone_placeholder": "Phone Number (e.g. +9779800000000)",
+  "enter_name_phone": "Please enter your name and phone number.",
+  "invalid_phone": "Please enter a valid phone number.",
+  "validation": "Validation"
 }

@@ -10,6 +10,9 @@ import AppSplash from "./src/components/SplashScreen";
 import { RoleProvider } from "./src/context/RoleContext";
 import RoleSelectionScreen from "./src/screens/RoleSelectionScreen";
 const Stack = createNativeStackNavigator();
+import NamePhoneScreen from "./src/screens/NamePhoneScreen";
+import { UserProvider } from "./src/context/UserContext";
+
 
 export default function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -41,6 +44,7 @@ export default function App() {
 
   return (
     <LanguageProvider>
+      <UserProvider>
       <RoleProvider>
       <NavigationContainer>
         <Stack.Navigator
@@ -50,9 +54,11 @@ export default function App() {
           <Stack.Screen name="Language" component={LanguageScreen} />
           <Stack.Screen name="GetStarted" component={GetStartedScreen} />
           <Stack.Screen name="RoleSelection" component={RoleSelectionScreen} />
+          <Stack.Screen name="NamePhone" component={NamePhoneScreen} />
         </Stack.Navigator>
       </NavigationContainer>
       </RoleProvider>
+      </UserProvider>
     </LanguageProvider>
   );
 }

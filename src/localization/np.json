@@ -4,5 +4,21 @@
   "continue": "अगाडि बढ्नुहोस्",
   "choose_language": "भाषा छान्नुहोस्...",
    "tagline_title": "सबै सेवाहरू एउटै एपमा",
-  "tagline_subtitle": "तपाईंको सेवाको आवश्यकता सरल बनाउँदै"
+  "tagline_subtitle": "तपाईंको सेवाको आवश्यकता सरल बनाउँदै",
+  "who_are_you": "तपाईं को हुनुहुन्छ?",
+  "choose_role": "सुरु गर्न आफ्नो भूमिका छान्नुहोस्",
+  "service_provider": "सेवा प्रदायक",
+  "consumer": "ग्राहक",
+  "service_provider_desc": "ग्राहकहरूलाई सेवा प्रदान गर्नुहोस्",
+  "consumer_desc": "सेवा प्रदायकहरू भाडामा लिनुहोस्",
+  "please_select_role": "जारी राख्न भूमिका चयन गर्नुहोस्।",
+  "error": "त्रुटि",
+  "something_went_wrong": "केही गलत भयो। फेरि प्रयास गर्नुहोस्।",
+   "lets_get_started": "सुरु गरौं!",
+  "enter_name_phone_subtitle": "जारी राख्न आफ्नो नाम र फोन नम्बर राख्नुहोस्",
+  "name_placeholder": "पुरा नाम",
+  "phone_placeholder": "फोन नम्बर (जस्तै +९७७९८००००००००)",
+  "enter_name_phone": "कृपया आफ्नो नाम र फोन नम्बर राख्नुहोस्।",
+  "invalid_phone": "कृपया मान्य फोन नम्बर राख्नुहोस्।",
+  "validation": "मान्यता"
 }
