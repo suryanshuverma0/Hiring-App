@@ -20,5 +20,13 @@
   "phone_placeholder": "Phone Number (e.g. +9779800000000)",
   "enter_name_phone": "Please enter your name and phone number.",
   "invalid_phone": "Please enter a valid phone number.",
-  "validation": "Validation"
+  "validation": "Validation",
+  "otp_verification": "OTP Verification",
+  "enter_otp_sent_to": "Enter the OTP sent to",
+  "otp_placeholder": "Enter 6-digit OTP",
+  "verify": "Verify",
+  "verifying": "Verifying...",
+  "otp_sent": "OTP Sent",
+  "check_sms": "Please check your SMS for the OTP",
+  "enter_valid_otp": "Please enter a valid 6-digit OTP"
 }

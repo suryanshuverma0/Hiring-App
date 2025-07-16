@@ -17,30 +17,60 @@ export default function NamePhoneScreen({ navigation }) {
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
 
+  // const handleContinue = async () => {
+  //   if (!name || !phone) {
+  //     Alert.alert(i18n.t("validation"), i18n.t("enter_name_phone"));
+  //     return;
+  //   }
+  //   if (!/^\+?[0-9]{10,15}$/.test(phone)) {
+  //     Alert.alert(i18n.t("validation"), i18n.t("invalid_phone"));
+  //     return;
+  //   }
+
+  //   try {
+  //     // Save user info
+  //     await saveUser(name, phone);
+
+  //     // Navigate to OTP screen
+  //     navigation.reset({
+  //       index: 0,
+  //       routes: [{ name: "OTP" }], // Replace with OTP screen later
+  //       params: { phone } // Pass phone number to OTP screen
+  //     });
+  //   } catch (error) {
+  //     console.error("Error saving user info:", error);
+  //     Alert.alert(i18n.t("error"), i18n.t("something_went_wrong"));
+  //   }
+  // };
+
+
   const handleContinue = async () => {
-    if (!name || !phone) {
-      Alert.alert(i18n.t("validation"), i18n.t("enter_name_phone"));
-      return;
-    }
-    if (!/^\+?[0-9]{10,15}$/.test(phone)) {
-      Alert.alert(i18n.t("validation"), i18n.t("invalid_phone"));
-      return;
-    }
+  if (!name || !phone) {
+    Alert.alert(i18n.t("validation"), i18n.t("enter_name_phone"));
+    return;
+  }
+  if (!/^\+?[0-9]{10,15}$/.test(phone)) {
+    Alert.alert(i18n.t("validation"), i18n.t("invalid_phone"));
+    return;
+  }
 
-    try {
-      // Save user info
-      await saveUser(name, phone);
+  try {
+    // Save user info
+    await saveUser(name, phone);
 
-      // Navigate to OTP screen
-      navigation.reset({
-        index: 0,
-        routes: [{ name: "OTP" }], // Replace with OTP screen later
-      });
-    } catch (error) {
-      console.error("Error saving user info:", error);
-      Alert.alert(i18n.t("error"), i18n.t("something_went_wrong"));
-    }
-  };
+    // Navigate to OTP screen WITH phone param
+    navigation.reset({
+      index: 0,
+      routes: [{
+        name: "OTP", // ✅ Match the name in App.js stack
+        params: { phone } // ✅ Pass phone here
+      }],
+    });
+  } catch (error) {
+    console.error("Error saving user info:", error);
+    Alert.alert(i18n.t("error"), i18n.t("something_went_wrong"));
+  }
+};
 
   return (
     <KeyboardAvoidingView

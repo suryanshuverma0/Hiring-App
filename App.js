@@ -12,11 +12,12 @@ import RoleSelectionScreen from "./src/screens/RoleSelectionScreen";
 const Stack = createNativeStackNavigator();
 import NamePhoneScreen from "./src/screens/NamePhoneScreen";
 import { UserProvider } from "./src/context/UserContext";
-
-
+import OtpScreen from "./src/screens/OtpScreen";
 export default function App() {
   const [isLoading, setIsLoading] = useState(true);
   const [initialRoute, setInitialRoute] = useState("Language");
+
+
 
   useEffect(() => {
     const checkLanguage = async () => {
@@ -55,6 +56,7 @@ export default function App() {
           <Stack.Screen name="GetStarted" component={GetStartedScreen} />
           <Stack.Screen name="RoleSelection" component={RoleSelectionScreen} />
           <Stack.Screen name="NamePhone" component={NamePhoneScreen} />
+          <Stack.Screen name="OTP" component={OtpScreen} />
         </Stack.Navigator>
       </NavigationContainer>
       </RoleProvider>
